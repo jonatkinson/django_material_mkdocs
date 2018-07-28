@@ -119,7 +119,6 @@ USE_TZ = True
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend',
 )
 
 SITE_ID = 1
@@ -138,4 +137,3 @@ with open(MKDOCS_CONFIG, 'r') as f:
     DOCS_DIR = yaml.load(f, Loader=yaml.Loader)['site_dir']
     DOCS_STATIC_NAMESPACE = os.path.basename(DOCS_DIR)
 
-from .allauth_settings import *
