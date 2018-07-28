@@ -11,10 +11,9 @@ name = "pypi"
 
 [packages]
 
-django = "*"
-pyyaml = "*"
-django-allauth = "*"
+Django = "*"
+PyYAML = "*"
 mkdocs = "*"
-pygments = "*"
+Pygments = "*"
 pymdown-extensions = "*"
 mkdocs-material = "*"
