@@ -1,14 +1,3 @@
-# Arlei F. Farnetani Junior
+# Hello, World
 
-Documentação Pessoal de desenvolvimento.
-
-Fontes da documentação com autenticação podem ser baixados
-em:
-
-https://github.com/farnetani/django_material_mkdocs
-
-Meu contato:
-(35)98883-7909
-
-Meu e-mail:
-farnetani@gmail.com
+This is some sample documentation for `django_material_mkdocs`. If you can see this, it probably works!
