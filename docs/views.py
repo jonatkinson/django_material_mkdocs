@@ -15,6 +15,4 @@ def serve_docs(request, path):
 
     path = os.path.join(settings.DOCS_STATIC_NAMESPACE, path)
 
-    return HttpResponse(path)
-
     return serve(request, path, insecure=True)
