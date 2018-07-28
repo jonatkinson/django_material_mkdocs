@@ -1,6 +1,6 @@
 # django_material_mkdocs
 
-A Django wrapper application to provide authentication (powered by `django-allauth`) to an `mkdocs` project. By default this also includes `mkdocs-material`.
+A Django wrapper application to provide authentication to an `mkdocs` project. By default this also includes `mkdocs-material`, and the login/logout pages use `materialize.css`.
 
 The original author was Arlei F. Farnetani Junior (farnetani@gmail.com)
 
