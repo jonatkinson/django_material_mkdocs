@@ -1,0 +1,14 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Hello, World\n\n\nThis is some sample documentation for \ndjango_material_mkdocs\n. If you can see this, it probably works!", 
+            "title": "Hello, World"
+        }, 
+        {
+            "location": "/#hello-world", 
+            "text": "This is some sample documentation for  django_material_mkdocs . If you can see this, it probably works!", 
+            "title": "Hello, World"
+        }
+    ]
+}
