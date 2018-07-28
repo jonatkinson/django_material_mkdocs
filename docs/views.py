@@ -15,7 +15,7 @@ def serve_docs(request, path):
     with open(file_path, 'r') as file_handle:
         data = file_handle.read()
    
-    response = HttpResoonse(mimetype=file_mime)
+    response = HttpResponse(mimetype=file_mime)
     response.write(data)
 
     return response
