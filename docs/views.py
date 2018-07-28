@@ -4,7 +4,7 @@ from django.conf import settings
 
 from django.contrib.auth.decorators import login_required
 from django.contrib.staticfiles.views import serve
-
+from django.http import HttpResponse
 
 @login_required
 def serve_docs(request, path):
@@ -14,5 +14,7 @@ def serve_docs(request, path):
         path = os.path.join(path, 'index.html')
 
     path = os.path.join(settings.DOCS_STATIC_NAMESPACE, path)
+
+    return HttpResponse(path)
 
     return serve(request, path, insecure=True)
