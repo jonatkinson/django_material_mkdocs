@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 
 import os
 import yaml
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -139,3 +140,4 @@ with open(MKDOCS_CONFIG, 'r') as f:
     DOCS_DIR = yaml.load(f, Loader=yaml.Loader)['site_dir']
     DOCS_STATIC_NAMESPACE = os.path.basename(DOCS_DIR)
 
+django_heroku.settings(locals())
