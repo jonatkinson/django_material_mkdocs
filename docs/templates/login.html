@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="." method="post" class="login-form form">
+        <div class="row margin">
+
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+
+            <!-- Username field -->
+            <span class="red-text text-darken-2">  {{ form.username.errors }}</span>
+            <div class="input-field col s12">
+                <i class="prefix material-icons">account_circle</i>
+                <label class="active" for="email" data-error="wrong" data-success="right"> Username</label>
+                {{ form.username }}
+            </div>
+
+            <!-- Password field -->
+            <span class="red-text text-darken-2">  {{ form.password.errors }}</span>
+            <div class="input-field col s12">
+                <i class="prefix material-icons">lock</i>
+                <label class="active" for="{{ form.password_id }}" data-error="wrong" data-success="right"> Password</label>
+                {{ form.password }}
+            </div>
+
+            <!-- Submit button -->
+            <div class="row">
+                <div class="input-field col s12 center-align">
+                    <button type="submit" class="btn waves-effect waves-light indigo">Sign in
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+    </form>
+{% endblock %}

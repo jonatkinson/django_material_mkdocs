@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row margin center-align">
+
+        <p class="message">You have been logged out.</p>
+
+        <!-- Login link -->
+        <div class="row">
+            <div class="input-field col s12 center-align">
+                <a href="{% url "login" %}" class="btn waves-effect waves-light indigo">Sign in
+                    <i class="material-icons right">send</i>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
