@@ -1,61 +1,18 @@
-# Project information
-
 ## START: Django
 docs_dir: 'mkdocs'
 site_dir: 'docs/static/mkdocs_build'
 ## END: Django
 
-site_name: MkDocs Farnetani
-site_description: Documentação Pessoal de Arlei F. Farnetani Junior
-site_author: Arlei F. Farnetani Junior
-site_url: https://farnetani.github.io/
-
-# Repository
-repo_name: farnetani/django_material_mkdocs
-repo_url: https://github.com/farnetani/django_material_mkdocs
-edit_uri: ""
-
-# Copyright
-copyright: 'Copyright &copy; 2016 - 2018 Arlei F. Farnetani Junior'
+site_name: Sample Documentation.
+site_description: This is a sample site for `django_material_mkdocs`.
 
 # Configuration
 theme:
-  name: null
-  custom_dir: material
+  name: material
 
   # 404 page
   static_templates:
     - 404.html
-
-  # Don't include MkDocs' JavaScript
-  include_search_page: false
-  search_index_only: true
-
-  # Default values, taken from mkdocs_theme.yml
-  language: pt
-  feature:
-    tabs: true
-  palette:
-    primary: indigo
-    accent: indigo
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/images/favicon.png
-  logo:
-    icon: "\uE80C"
-
-# Customization
-extra:
-  social:
-    - type: globe
-      link: https://farnetani.github.io
-    - type: github-alt
-      link: https://github.com/farnetani
-    - type: twitter
-      link: https://twitter.com/farnetani
-    - type: linkedin
-      link: https://linkedin.com/in/farnetani
 
 # Extensions
 markdown_extensions:
@@ -73,8 +30,6 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  # - pymdownx.emoji:
-      # emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink
@@ -87,8 +42,3 @@ markdown_extensions:
 
 # Page tree
 pages:
-
-# Google Analytics
-google_analytics:
-  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
-  - auto
