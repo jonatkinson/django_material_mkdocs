@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "987f9a9a8a419d996535141f4044a97744f429415801133670eedcdca2dd87e3"
+            "sha256": "8d1be605afa2259b8ad56327d0adb0d34721250998f9d15c18e676c2e7eeee4e"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -34,12 +34,26 @@
             ],
             "version": "==0.5"
         },
+        "binaryornot": {
+            "hashes": [
+                "sha256:b8b71173c917bddcd2c16070412e369c3ed7f0528926f70cac18a6c97fd563e4",
+                "sha256:359501dfc9d40632edc9fac890e19542db1a287bbcfa58175b66658392018061"
+            ],
+            "version": "==0.4.4"
+        },
         "certifi": {
             "hashes": [
                 "sha256:9fa520c1bacfb634fa7af20a76bcbd3d5fb390481724c597da32c719a7dca4b0",
                 "sha256:13e698f54293db9f89122b0581843a782ad0934a4fe0172d2a980ba77fc61bb7"
             ],
             "version": "==2018.4.16"
+        },
+        "chardet": {
+            "hashes": [
+                "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691",
+                "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
+            ],
+            "version": "==3.0.4"
         },
         "click": {
             "hashes": [
