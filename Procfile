@@ -1,2 +1,2 @@
-release: mkdocs build
 web: gunicorn docs.wsgi
+release: mkdocs build

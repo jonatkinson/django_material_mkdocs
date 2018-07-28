@@ -1,6 +1,6 @@
 ## START: Django
 docs_dir: 'mkdocs'
-site_dir: 'docs/static/mkdocs_build'
+site_dir: 'mkdocs_build'
 ## END: Django
 
 site_name: Sample Documentation.
