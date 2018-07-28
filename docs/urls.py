@@ -5,5 +5,5 @@ from .views import serve_docs
 
 
 urlpatterns = [
-    url(r'^(?P<path>.*)$', serve_docs),
+    url(r'^(?P<path>.*)$', serve_docs, name="serve_docs"),
 ]
