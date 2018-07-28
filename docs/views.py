@@ -1,4 +1,5 @@
 import os
+import mimetypes
 
 from django.conf import settings
 
@@ -8,7 +9,18 @@ from django.http import HttpResponse
 
 @login_required
 def serve_docs(request, path):
-    filepath = os.path.join(settings.BASE_DIR, "mkdocs_build", path)
+    file_path = os.path.join(settings.BASE_DIR, "mkdocs_build", path)
+    file_mime = mimetypes.guess_type(file_path)
+
+    with open(file_path, 'r') as file_handle:
+        data = file_handle.read()
+   
+    response = HttpResoonse(mimetype=file_mime)
+    response.write(data)
+
+    return response
+
+    #------
 
     return HttpResponse(filepath)
 
