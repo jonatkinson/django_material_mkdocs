@@ -21,3 +21,7 @@ farnetani@gmail.com
 - Open `http://localhost:8000/docs/`
 - Login with the created superuser.
 - That's it, you're finished.
+
+## Todo
+
+- Add a 'logout' link to the navigation.
