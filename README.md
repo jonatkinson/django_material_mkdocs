@@ -1,11 +1,8 @@
 # django_material_mkdocs
 
-Template Material para Mkdocs com Senha através do Django (django-allauth)
+A Django wrapper application to provide authentication (powered by `django-allauth`) to an `mkdocs` project. By default this also includes `mkdocs-material`.
 
-This combines two projects: django_mkdocs + mkdocs-material
-
-Arlei F. Farnetani Junior
-farnetani@gmail.com
+The original author was Arlei F. Farnetani Junior (farnetani@gmail.com)
 
 ## Installation
 
