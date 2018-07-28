@@ -121,6 +121,8 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 
+LOGIN_REDIRECT_URL = '/docs/'
+
 SITE_ID = 1
 
 # Static files (CSS, JavaScript, Images)
