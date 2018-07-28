@@ -105,3 +105,4 @@ tags
 
 docs/static/mkdocs_build
 .venv
+.idea
