@@ -8,7 +8,9 @@ from django.http import HttpResponse
 
 @login_required
 def serve_docs(request, path):
-    docs_path = os.path.join(settings.DOCS_DIR, path)
+    filepath = os.path.join(settings.BASE_DIR, "mkdocs_build", path)
+
+    return HttpResponse(filepath)
 
     if os.path.isdir(docs_path):
         path = os.path.join(path, 'index.html')
